@@ -1,0 +1,124 @@
+
+@media screen and (max-width:991px) {
+
+    h3{
+        font-size: 1.2rem;
+    }
+    
+    .nav-toggle{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .main-nav{
+        overflow: initial;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+       
+    }
+    .nav-links{
+       position: absolute;
+       background-color: #183b56;
+       top: 120%;
+       left: -100%;
+       width: 100%;
+       padding-block:20px;
+       transition: 0.3s ease-in-out;
+    }
+.nav-links.active{
+    left: 0;
+}
+
+    .nav-links ul{
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .project-area{
+        gap:20px;
+    }
+   .project-card{
+    width:calc(50% - 10px);
+    height: 180px;
+   }
+   
+}
+
+@media screen and (max-width:767px) {
+    .header-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .primary-btn{
+        width: 100%;
+    }
+    
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+   }
+
+   @media  screen and (max-width: 479px){
+    :root{
+    --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    .experience-box{
+        padding: 20px 15px;
+    }
+
+    .project-card{
+        min-width: 100%;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .education-img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+    
+    .education-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .education-details-container h2{
+        color: var(--primary-color);
+    }
+    .education-box {
+        flex-direction: column;
+        align-items: start;
+        background-color: white;
+        border: none;
+        box-shadow: 1px 3px 5px gray;
+        width: 300px;
+        padding: 10px 20px;
+        gap: 5px;
+    }
+   }
